@@ -12,7 +12,8 @@ Once complete, your site should be deployed to Github Pages.
 
 ## Mockups
 
-(embed mockups or link them)
+1. [Desktop](https://github.com/cardinal-solutions/developer-coding-evaluation/blob/master/mockups/mockup-desktop.png)
+2. [Mobile](https://github.com/cardinal-solutions/developer-coding-evaluation/blob/master/mockups/mockup-mobile.png)
 
 
 ## Evaluation Criteria
