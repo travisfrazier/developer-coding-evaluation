@@ -98,4 +98,10 @@ header {
   .client-message p {
     width: 80%; }
 
+.gojo figure {
+  padding-top: 3rem;
+  background-image: url("../images/pic-gojo-bg.png"); }
+  .gojo figure img {
+    width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
