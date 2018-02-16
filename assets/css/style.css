@@ -218,7 +218,6 @@ header {
     .contact form .form-content {
       max-width: 90%; }
   .contact input, .contact textarea {
-    display: inline;
     border-radius: 3px;
     border: none;
     font-size: 1rem;
@@ -228,7 +227,7 @@ header {
     margin-bottom: 1rem; }
   .contact textarea {
     height: 6rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
   .contact button {
     background-color: #2174c2;
     color: #fff;
