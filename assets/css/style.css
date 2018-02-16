@@ -130,7 +130,8 @@ header {
     font-size: 1rem;
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 12rem; }
 
 .fifth-third {
   background: url("../images/pic-fifththird-bg.png");
@@ -162,7 +163,8 @@ header {
     font-size: 1rem;
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 12rem; }
 
 .christ-hospital {
   background: url("../images/pic-chhn-bg.png") no-repeat;
@@ -194,7 +196,8 @@ header {
     font-size: 1rem;
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 12rem; }
 
 .contact {
   display: flex;
@@ -210,33 +213,39 @@ header {
     width: 70%;
     text-align: center;
     font-weight: 200;
-    margin-bottom: 1.75rem; }
+    margin: 0rem auto 0rem auto; }
   .contact form {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 1.75rem; }
+    .contact form button {
+      background-color: #2174c2;
+      color: #fff;
+      font-size: 1rem;
+      padding: 1.25rem 2.25rem;
+      border-radius: 5px;
+      font-weight: 700;
+      width: 12rem;
+      margin-bottom: 4rem; }
     .contact form .form-content {
       padding: 1rem; }
-  .contact input, .contact textarea {
-    border-radius: 3px;
-    border: none;
-    font-size: 1rem;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-  .contact input {
-    height: 3.25rem;
-    margin-bottom: 1rem; }
-  .contact textarea {
-    height: 6rem;
-    margin-bottom: 1.5rem;
-    resize: none; }
-  .contact button {
-    background-color: #2174c2;
-    color: #fff;
-    font-size: 1rem;
-    padding: 1.25rem 2.25rem;
-    border-radius: 5px;
-    font-weight: 700; }
+      .contact form .form-content input, .contact form .form-content textarea {
+        border-radius: 3px;
+        border: none;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+      .contact form .form-content input {
+        height: 3.25rem;
+        margin-bottom: 1rem; }
+      .contact form .form-content textarea {
+        height: 6rem;
+        margin-bottom: 1.5rem;
+        resize: none;
+        padding-top: 0.75rem; }
+  .contact .contact-two {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

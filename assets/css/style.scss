@@ -182,6 +182,7 @@ header {
       padding: 1.25rem 2.25rem;
       border-radius: 5px;
       font-weight: $font-bold;
+      width: 12rem;
     }
   }
 }
@@ -222,6 +223,7 @@ header {
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
     font-weight: $font-bold;
+    width: 12rem;
   }
 }
 
@@ -261,6 +263,7 @@ header {
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
     font-weight: $font-bold;
+    width: 12rem;
   }
 }
 
@@ -280,41 +283,47 @@ header {
     width: 70%;
     text-align: center;
     font-weight: $font-light;
-    margin-bottom: 1.75rem;
+    margin: 0rem auto 0rem auto;
   }
-
   // Contact Form Styles
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1.75rem;
+    button {
+      background-color: $blue-background;
+      color: $white-font;
+      font-size: 1rem;
+      padding: 1.25rem 2.25rem;
+      border-radius: 5px;
+      font-weight: $font-bold;
+      width: 12rem;
+      margin-bottom: 4rem;
+    }
     .form-content {
       padding: 1rem;
+      input, textarea {
+        border-radius: 3px;
+        border:none;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        height: 3.25rem;
+        margin-bottom: 1rem;
+      }
+      textarea {
+        height: 6rem;
+        margin-bottom: 1.5rem;
+        resize: none;
+        padding-top: 0.75rem;
+      }
     }
   }
-  input, textarea {
-    border-radius: 3px;
-    border:none;
-    font-size: 1rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  input {
-    height: 3.25rem;
-    margin-bottom: 1rem;
-  }
-  textarea {
-    height: 6rem;
-    margin-bottom: 1.5rem;
-    resize: none;
-  }
-  button {
-    background-color: $blue-background;
-    color: $white-font;
-    font-size: 1rem;
-    padding: 1.25rem 2.25rem;
-    border-radius: 5px;
-    font-weight: $font-bold;
+  .contact-two {
+    text-align: center;
   }
 }
