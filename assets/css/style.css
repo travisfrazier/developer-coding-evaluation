@@ -211,8 +211,8 @@ header {
     text-align: center;
     font-weight: 200;
     margin-bottom: 1.75rem; }
-  .contact .form {
-    max-width: 90%;
+  .contact form {
+    max-width: 80%;
     margin: auto; }
   .contact input, .contact textarea {
     width: 100%;
