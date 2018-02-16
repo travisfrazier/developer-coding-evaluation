@@ -283,7 +283,7 @@ header {
     margin-bottom: 1.75rem;
   }
   form {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
   }
   input, textarea {
@@ -292,6 +292,7 @@ header {
     border-radius: 3px;
     border: 1px solid $border-color;
     font-size: 1rem;
+    display: block;
   }
   input {
     padding-top: 1rem;
