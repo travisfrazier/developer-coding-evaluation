@@ -305,6 +305,7 @@ header {
   textarea {
     height: 6rem;
     margin-bottom: 1.5rem;
+    resize: none;
   }
   button {
     background-color: $blue-background;
