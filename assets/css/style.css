@@ -216,16 +216,15 @@ header {
     margin: auto; }
   .contact input, .contact textarea {
     width: 100%;
-    margin: 0.50rem auto;
+    display: inline;
     border-radius: 3px;
-    border: 1px solid gray;
-    font-size: 1rem;
-    display: inline-block; }
+    border: none;
+    font-size: 1rem; }
   .contact input {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    height: 3.25rem;
+    margin-bottom: 1rem; }
   .contact textarea {
-    padding-bottom: 5rem;
-    padding-top: 1rem; }
+    height: 6rem;
+    margin-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
