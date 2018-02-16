@@ -282,8 +282,10 @@ header {
     font-weight: $font-light;
     margin-bottom: 1.75rem;
   }
+
+  // Contact Form Styles
   form {
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
   }
   input, textarea {
@@ -292,13 +294,14 @@ header {
     border-radius: 3px;
     border: 1px solid $border-color;
     font-size: 1rem;
-    display: block;
+    display: inline-block;
   }
   input {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   textarea {
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
   }
 }

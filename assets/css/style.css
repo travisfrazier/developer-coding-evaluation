@@ -212,7 +212,7 @@ header {
     font-weight: 200;
     margin-bottom: 1.75rem; }
   .contact form {
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto; }
   .contact input, .contact textarea {
     width: 100%;
@@ -220,11 +220,12 @@ header {
     border-radius: 3px;
     border: 1px solid gray;
     font-size: 1rem;
-    display: block; }
+    display: inline-block; }
   .contact input {
     padding-top: 1rem;
     padding-bottom: 1rem; }
   .contact textarea {
-    padding-bottom: 6rem; }
+    padding-bottom: 5rem;
+    padding-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
