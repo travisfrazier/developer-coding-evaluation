@@ -109,11 +109,11 @@
   <section class="contact">
     <h3>Connect With Us</h3>
     <p>Have a question or just want to chat? Get in touch.</p>
-    <form>
+    <form name="contactForm" onsubmit="return formValidate()" method="post">
       <div class="form-content">
-        <input type="text" id="name" name="user_name" placeholder="Name">
-        <input type="email" id="mail" name="user_email" placeholder="Email">
-        <textarea id="comment" name="user_comment" placeholder="Message"></textarea>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="email" id="mail" name="email" placeholder="Email">
+        <textarea id="comment" name="message" placeholder="Message"></textarea>
       </div>
       <button type="submit">Submit</button>
     </form>

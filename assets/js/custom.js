@@ -10,3 +10,27 @@ function initMap() {
     map: map
   });
 }
+
+// Contact Form Validation ----- //
+// User name validation 
+function formValidate() {
+  var input = document.forms["contactForm"]["name"].value;
+  if (input == "") {
+      alert("Please enter your name");
+      return false;
+  }
+  //Email Validation
+  var email = document.forms["contactForm"]["email"].value;
+  if (email == "") {
+      alert("Please enter your email address");
+      return false;
+  }
+
+  //Message Validation 
+  var message = document.forms["contactForm"]["message"].value;
+  if (message == "") {
+      alert("Please enter your message");
+      return false;
+  }
+}
+
