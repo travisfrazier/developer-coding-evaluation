@@ -275,6 +275,14 @@ header {
     width: 55%;
     margin-bottom: 3rem;
   }
+  #google-map {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
   // Form Styles
   form {
     @include flex-column;
@@ -294,9 +302,7 @@ header {
         width: 100%;
         margin: 0;
         padding: 0;
-        ::-webkit-input-placeholder {
-          padding-left: 1rem;
-        }
+        padding-left: 0.25rem;
       }
       input {
         height: 3.25rem;
@@ -321,5 +327,20 @@ header {
       font-weight: $font-bold;
       margin-bottom: 2.25rem;
     }
+  }
+}
+
+// Footer Section 
+footer {
+  background-color: #c5c1c1;
+  font-size: 0.85rem;
+  @include flex-column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  img {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
