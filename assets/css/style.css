@@ -18,19 +18,21 @@
   src: url("../fonts/effra_std_rg.tff") format("tff");
   font-weight: 400;
   font-style: normal; }
+html {
+  box-sizing: border-box;
+  font-family: "effra", sans-serif; }
+
 body {
-  font-family: "effra", sans-serif;
-  line-height: 1.5rem;
-  box-sizing: border-box; }
+  line-height: 1.5rem; }
 
 header {
-  background: no-repeat right url("../images/cardinal-blue-bg.png");
-  background-size: auto 100%;
-  height: 350px;
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: no-repeat right url("../images/cardinal-blue-bg.png");
+  background-size: 1000px;
+  height: 350px;
+  color: #fff;
   font-weight: 400; }
   header figure {
     margin-top: 4rem;
@@ -81,16 +83,16 @@ header {
   margin-bottom: 2rem; }
 
 .client-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #1f1d1d;
   color: #fff;
   margin-bottom: 0rem;
   width: 90%;
   height: 17rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 65rem;
   opacity: 0.8; }
@@ -134,12 +136,12 @@ header {
     width: 12rem; }
 
 .fifth-third {
-  background: url("../images/pic-fifththird-bg.png");
-  background-position: center;
-  background-size: 2200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url("../images/pic-fifththird-bg.png");
+  background-position: center;
+  background-size: 2200px;
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #fff; }
@@ -169,7 +171,7 @@ header {
 .christ-hospital {
   background: url("../images/pic-chhn-bg.png") no-repeat;
   background-position: center;
-  background-size: 1500px;
+  background-size: 2000px;
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
@@ -214,6 +216,10 @@ header {
     text-align: center;
     font-weight: 200;
     margin: 0rem auto 0rem auto; }
+  .contact #border {
+    border-top: 1px solid gray;
+    width: 55%;
+    margin-bottom: 3rem; }
   .contact form {
     display: flex;
     flex-direction: column;
@@ -227,7 +233,7 @@ header {
       border-radius: 5px;
       font-weight: 700;
       width: 12rem;
-      margin-bottom: 4rem; }
+      margin-bottom: 3rem; }
     .contact form .form-content {
       padding: 1rem; }
       .contact form .form-content input, .contact form .form-content textarea {
@@ -237,6 +243,8 @@ header {
         width: 100%;
         margin: 0;
         padding: 0; }
+        .contact form .form-content input ::-webkit-input-placeholder, .contact form .form-content textarea ::-webkit-input-placeholder {
+          padding-left: 1rem; }
       .contact form .form-content input {
         height: 3.25rem;
         margin-bottom: 1rem; }
@@ -247,5 +255,12 @@ header {
         padding-top: 0.75rem; }
   .contact .contact-two {
     text-align: center; }
+    .contact .contact-two h5 {
+      font-weight: 700;
+      font-size: 1.10rem;
+      margin-bottom: 1rem; }
+    .contact .contact-two .number {
+      font-weight: 700;
+      margin-bottom: 2.25rem; }
 
 /*# sourceMappingURL=style.css.map */

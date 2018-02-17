@@ -1,18 +1,31 @@
 
 // Variables ---------- //
-$font-family-1: 'effra', sans-serif;
+$font-family-primary: 'effra', sans-serif;
 $font-bold: 700;
 $font-regular: 400;
 $font-light: 200;
 $font-medium: 500;
 
-$white-font: #fff;
-$black-font: #000;
+$color-font-primary: #fff;
+$color-font-secondary: #000;
 
-$grey-background: #ecebeb;
-$blue-background: #2174c2;
+$background-primary: #ecebeb;
+$background-secondary: #2174c2;
 $border-color: gray;
 
+// Mixins
+@mixin button {
+  font-size: 1rem;
+  padding: 1.25rem 2.25rem;
+  border-radius: 5px;
+  font-weight: $font-bold;
+  width: 12rem;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 // Fonts
 @font-face {
@@ -21,21 +34,18 @@ $border-color: gray;
   font-weight: $font-bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'effra';
   src: url('../fonts/effra_std_lt.tff') format('tff');
   font-weight: $font-light;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'effra';
   src: url('../fonts/effra_std_md.tff') format('tff');
   font-weight: $font-medium;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'effra';
   src: url('../fonts/effra_std_rg.tff') format('tff');
@@ -43,25 +53,22 @@ $border-color: gray;
   font-style: normal;
 }
 
-// Main Styles 
-body {
-  font-family: $font-family-1;
-  line-height: 1.5rem;
+// Global Styles 
+html {
   box-sizing: border-box;
+  font-family: $font-family-primary;
 }
-
-
-
+body {
+  line-height: 1.5rem;
+}
 
 // Header Section Styles 
 header {
+  @include flex-column;
   background: no-repeat right url("../images/cardinal-blue-bg.png");
-  background-size: auto 100%;
+  background-size: 1000px;
   height: 350px;
-  color: $white-font;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: $color-font-primary;
   font-weight: $font-regular;
   figure {
     margin-top: 4rem;
@@ -82,14 +89,12 @@ header {
 
 // Services Section Styles 
 .services {
-  background-color: $grey-background;
+  background-color: $background-primary;
   padding-top: 4rem;
   padding-bottom: 10rem;
 }
 .service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
   max-width: 85%;
   margin: 0 auto;
   img {
@@ -107,9 +112,7 @@ header {
 
 // Clients Section 
 .clients {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
   padding-top: 10rem;
 }
 .client {
@@ -122,16 +125,14 @@ header {
   margin-bottom: 2rem;
 }
 .client-message {
+  @include flex-column;
+  justify-content: center;
   background-color: #1f1d1d;
-  color: $white-font;
+  color: $color-font-primary;
   margin-bottom: 0rem;
   width: 90%;
   height: 17rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 65rem;
   opacity: 0.8;
@@ -157,7 +158,7 @@ header {
     }
   }
   div {
-    background-color: $grey-background;
+    background-color: $background-primary;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-bottom: 3rem;
@@ -176,28 +177,22 @@ header {
       width: 90%;
     }
     button {
-      background-color: $blue-background;
-      color: $white-font;
-      font-size: 1rem;
-      padding: 1.25rem 2.25rem;
-      border-radius: 5px;
-      font-weight: $font-bold;
-      width: 12rem;
+      background-color: $background-secondary;
+      color: $color-font-primary;
+      @include button;
     }
   }
 }
 
 // Fifth Third App Section 
 .fifth-third {
+  @include flex-column;
   background: url("../images/pic-fifththird-bg.png");
   background-position: center;
   background-size: 2200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: $white-font;
+  color: $color-font-primary;
   h3 {
     font-size: 1.5rem;
     font-weight: $font-bold;
@@ -217,13 +212,9 @@ header {
     margin-bottom: 2rem;
   }
   button {
-    background-color: $white-font;
-    color: $black-font;
-    font-size: 1rem;
-    padding: 1.25rem 2.25rem;
-    border-radius: 5px;
-    font-weight: $font-bold;
-    width: 12rem;
+    background-color: $color-font-primary;
+    color: $color-font-secondary;
+    @include button;
   }
 }
 
@@ -231,13 +222,13 @@ header {
 .christ-hospital {
   background: url("../images/pic-chhn-bg.png") no-repeat;
   background-position: center;
-  background-size: 1500px;
+  background-size: 2000px;
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: left;
-  color: $white-font;
+  color: $color-font-primary;
   padding-left: 2rem;
   h3 {
     font-size: 1.5rem;
@@ -257,24 +248,18 @@ header {
     margin-bottom: 1.5rem;
   }
   button {
-    background-color: $white-font;
-    color: $black-font;
-    font-size: 1rem;
-    padding: 1.25rem 2.25rem;
-    border-radius: 5px;
-    font-weight: $font-bold;
-    width: 12rem;
+    background-color: $color-font-primary;
+    color: $color-font-secondary;
+    @include button;
   }
 }
 
 // Contact Section 
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  background-color: $grey-background;
+  background-color: $background-primary;
   h3 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -285,21 +270,20 @@ header {
     font-weight: $font-light;
     margin: 0rem auto 0rem auto;
   }
-  // Contact Form Styles
+  #border {
+    border-top: 1px solid $border-color;
+    width: 55%;
+    margin-bottom: 3rem;
+  }
+  // Form Styles
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column;
     margin-top: 1.75rem;
     button {
-      background-color: $blue-background;
-      color: $white-font;
-      font-size: 1rem;
-      padding: 1.25rem 2.25rem;
-      border-radius: 5px;
-      font-weight: $font-bold;
-      width: 12rem;
-      margin-bottom: 4rem;
+      background-color: $background-secondary;
+      color: $color-font-primary;
+      @include button;
+      margin-bottom: 3rem;
     }
     .form-content {
       padding: 1rem;
@@ -310,6 +294,9 @@ header {
         width: 100%;
         margin: 0;
         padding: 0;
+        ::-webkit-input-placeholder {
+          padding-left: 1rem;
+        }
       }
       input {
         height: 3.25rem;
@@ -325,5 +312,14 @@ header {
   }
   .contact-two {
     text-align: center;
+    h5 {
+      font-weight: $font-bold;
+      font-size: 1.10rem;
+      margin-bottom: 1rem;
+    }
+    .number {
+      font-weight: $font-bold;
+      margin-bottom: 2.25rem;
+    }
   }
 }
