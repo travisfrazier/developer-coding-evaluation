@@ -30,15 +30,17 @@ header {
   flex-direction: column;
   align-items: center;
   background: no-repeat right url("../images/cardinal-blue-bg.png");
-  background-size: 1000px;
+  background-size: cover;
   height: 350px;
   color: #fff;
   font-weight: 400; }
   header figure {
     margin-top: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center; }
     header figure img {
-      width: 10rem; }
+      max-width: 100%; }
   header p {
     font-size: 1.5rem;
     text-align: center;
@@ -58,6 +60,10 @@ header {
   align-items: center;
   max-width: 85%;
   margin: 0 auto; }
+  .service .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .service img {
     margin-bottom: 1.25rem; }
   .service p {
@@ -104,36 +110,39 @@ header {
     width: 80%;
     font-weight: 200; }
 
-.gojo figure {
-  padding-top: 3rem;
-  background: url("../images/pic-gojo-bg.png") left;
-  background-size: 1000px; }
-  .gojo figure img {
-    width: 90%; }
-.gojo div {
-  background-color: #ecebeb;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 3rem; }
-  .gojo div h3 {
-    font-size: 1.5rem;
-    width: 90%;
-    font-weight: 700;
-    margin-bottom: 0.5rem; }
-  .gojo div h4 {
-    font-weight: 700;
-    margin-bottom: 1.5rem; }
-  .gojo div p {
-    margin-bottom: 1.5rem;
-    width: 90%; }
-  .gojo div button {
-    background-color: #2174c2;
-    color: #fff;
-    font-size: 1rem;
-    padding: 1.25rem 2.25rem;
-    border-radius: 5px;
-    font-weight: 700;
-    width: 12rem; }
+.gojo {
+  background: url("../images/pic-gojo-bg.png");
+  background-size: cover;
+  background-position: center; }
+  .gojo figure {
+    padding-top: 3rem;
+    margin-bottom: -0.4rem; }
+    .gojo figure img {
+      width: 90%; }
+  .gojo .gojo-content {
+    background-color: #ecebeb;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem; }
+    .gojo .gojo-content h3 {
+      font-size: 1.5rem;
+      width: 90%;
+      font-weight: 700;
+      margin-bottom: 0.5rem; }
+    .gojo .gojo-content h4 {
+      font-weight: 700;
+      margin-bottom: 1.5rem; }
+    .gojo .gojo-content p {
+      margin-bottom: 1.5rem;
+      width: 90%; }
+    .gojo .gojo-content button {
+      background-color: #2174c2;
+      color: #fff;
+      font-size: 1rem;
+      padding: 1.25rem 2.25rem;
+      border-radius: 5px;
+      font-weight: 700;
+      width: 12rem; }
 
 .fifth-third {
   display: flex;
@@ -282,5 +291,89 @@ footer {
     padding-bottom: 0rem;
     padding-left: 1rem;
     padding-right: 1rem; }
+
+@media screen and (min-width: 900px) {
+  .header-container {
+    max-width: 1024px;
+    margin: 0 auto; }
+
+  header {
+    background-image: url("../images/cardinal-blue-bg.png");
+    background-size: cover;
+    padding-bottom: 4rem;
+    align-items: initial; }
+    header figure {
+      display: block;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      width: 1024px; }
+    header p {
+      font-size: 3rem;
+      max-width: 40rem;
+      line-height: 4rem;
+      margin: auto; }
+
+  .services {
+    padding-bottom: 7rem; }
+
+  .services-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto; }
+    .services-container .service-one {
+      margin-left: 3rem; }
+    .services-container .service img {
+      display: inline;
+      position: relative;
+      top: 3rem;
+      right: 9rem; }
+    .services-container .service-container {
+      justify-content: center;
+      align-items: flex-start;
+      width: 70%; }
+      .services-container .service-container p {
+        text-align: left; }
+
+  .clients {
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 15rem;
+    margin: auto;
+    margin-bottom: -10rem; }
+    .clients .client-message {
+      position: static;
+      height: 14rem;
+      width: 29.5rem;
+      margin: 0.5rem;
+      text-align: left; }
+      .clients .client-message h3 {
+        width: 80%; }
+    .clients .client {
+      width: 14rem;
+      height: 14rem;
+      margin: 0.5rem;
+      background-color: #fff; }
+
+  .gojo .gojo-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+  .gojo .gojo-content {
+    background: none;
+    margin-top: 5rem;
+    margin-left: 2rem; }
+    .gojo .gojo-content p {
+      width: 60%; }
+  .gojo figure {
+    margin-bottom: -0.45rem; }
+    .gojo figure img {
+      width: 100%;
+      padding-bottom: 0rem; } }
 
 /*# sourceMappingURL=style.css.map */
