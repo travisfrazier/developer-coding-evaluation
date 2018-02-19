@@ -11,6 +11,8 @@ $color-font-secondary: #000;
 
 $background-primary: #ecebeb;
 $background-secondary: #2174c2;
+$background-default: #fff;
+
 $border-color: gray;
 
 // Mixins
@@ -201,10 +203,15 @@ header {
   @include flex-column;
   background: url("../images/pic-fifththird-bg.png");
   background-position: center;
-  background-size: 2200px;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: $color-font-primary;
+  .fifth-third-content {
+    @include flex-column;
+    margin: 0 auto;
+  }
   h3 {
     font-size: 1.5rem;
     font-weight: $font-bold;
@@ -363,8 +370,7 @@ footer {
 
   // Header Styles
   .header-container {
-    max-width: 1024px;
-    margin: 0 auto;
+    @include wrapper;
   }
   header {
     background-image: url("../images/cardinal-blue-bg.png");
@@ -439,7 +445,7 @@ footer {
       width: 14rem;
       height: 14rem;
       margin: 0.5rem;
-      background-color: #fff;
+      background-color: $background-default;
     }
   }
 
@@ -462,6 +468,27 @@ footer {
       img {
         width: 100%;
         padding-bottom: 0rem;
+      }
+    }
+  }
+
+  // Fifth Third Section 
+  .fifth-third {
+    padding-bottom: 0rem;
+    .fifth-third-container {
+      @include wrapper;
+      display: flex;
+      flex-direction: row-reverse;
+      img {
+        width: 100%;
+        padding-bottom: 0rem;
+      }
+      .fifth-third-content {
+        margin-top: 5rem;
+        margin-right: 2rem;
+        p {
+          width: 60%;
+        }
       }
     }
   }
