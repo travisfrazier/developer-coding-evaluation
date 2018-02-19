@@ -241,7 +241,7 @@ header {
 .christ-hospital {
   background: url("../images/pic-chhn-bg.png") no-repeat;
   background-position: center;
-  background-size: 2000px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
@@ -375,12 +375,12 @@ footer {
   header {
     background-image: url("../images/cardinal-blue-bg.png");
     background-size: cover;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     align-items: initial;
     figure {
       display: block;
       margin-top: 2rem;
-      margin-bottom: 5rem;
+      margin-bottom: 6rem;
       width: 1024px;
     }
     p {
@@ -459,7 +459,8 @@ footer {
     }
     .gojo-content {
       background: none;
-      margin-top: 5rem;
+      margin-top: auto;
+      margin-bottom: auto;
       margin-left: 8rem;
     }
     figure {
@@ -492,7 +493,8 @@ footer {
         width: auto;
       }
       .fifth-third-content {
-        margin-top: 5rem;
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: 3rem;
         align-items: flex-start;
         p {
@@ -502,4 +504,60 @@ footer {
       }
     }
   }
+
+  // Christ Hospital Section 
+  .christ-hospital {
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    figure {
+      margin-right: 3rem;
+      margin-top: -3.5rem;
+      margin-bottom: -6rem;
+    }
+    .christ-hospital-content {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 3rem;
+      h3 {
+        width: 70%;
+      }
+    }
+  }
+
+
+  // Contact Section 
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+    .contact-one {
+      padding-right: 2rem;
+      button {
+        margin-right: auto;
+        margin-left: 1rem;
+      }
+    }
+    .contact-two {
+      text-align: left;
+      border-left: 2px solid $border-color;
+      padding-left: 2rem;
+      p {
+        text-align: left;
+        margin: 0;
+      }
+      #google-map {
+        margin: 2rem 0rem 0.75rem 0rem;
+      }
+    }
+  }
+  #border {
+    display: none;
+  }
+
+  //Footer Section {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
 }
