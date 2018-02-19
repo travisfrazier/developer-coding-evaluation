@@ -366,36 +366,46 @@ footer {
       margin: 0.5rem;
       background-color: #fff; }
 
-  .gojo .gojo-container {
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex; }
-  .gojo .gojo-content {
-    background: none;
-    margin-top: 5rem;
-    margin-left: 2rem; }
-    .gojo .gojo-content p {
-      width: 60%; }
-  .gojo figure {
-    margin-bottom: -0.45rem; }
-    .gojo figure img {
-      width: 100%;
-      padding-bottom: 0rem; }
+  .gojo {
+    padding-bottom: 2rem; }
+    .gojo .gojo-container {
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex; }
+    .gojo .gojo-content {
+      background: none;
+      margin-top: 5rem;
+      margin-left: 8rem; }
+      .gojo .gojo-content p {
+        width: 60%; }
+    .gojo figure {
+      margin-bottom: -2.4rem; }
+      .gojo figure img {
+        width: 100%;
+        padding-bottom: 0rem; }
 
   .fifth-third {
+    overflow: hidden;
     padding-bottom: 0rem; }
     .fifth-third .fifth-third-container {
       max-width: 1024px;
       margin: 0 auto;
       display: flex;
       flex-direction: row-reverse; }
+      .fifth-third .fifth-third-container figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative; }
       .fifth-third .fifth-third-container img {
-        width: 100%;
-        padding-bottom: 0rem; }
+        width: auto; }
       .fifth-third .fifth-third-container .fifth-third-content {
         margin-top: 5rem;
-        margin-right: 2rem; }
+        margin-right: 2rem;
+        align-items: flex-start; }
         .fifth-third .fifth-third-container .fifth-third-content p {
-          width: 60%; } }
+          width: 60%;
+          text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

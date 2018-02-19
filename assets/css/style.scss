@@ -451,6 +451,7 @@ footer {
 
   // Gojo Section 
   .gojo {
+    padding-bottom: 2rem;
     .gojo-container {
       @include wrapper;
       display: flex;
@@ -458,13 +459,13 @@ footer {
     .gojo-content {
       background: none;
       margin-top: 5rem;
-      margin-left: 2rem;
+      margin-left: 8rem;
       p {
         width: 60%;
       }
     }
     figure {
-      margin-bottom: -0.45rem;
+      margin-bottom: -2.4rem;
       img {
         width: 100%;
         padding-bottom: 0rem;
@@ -474,20 +475,29 @@ footer {
 
   // Fifth Third Section 
   .fifth-third {
+    overflow: hidden;
     padding-bottom: 0rem;
     .fifth-third-container {
       @include wrapper;
       display: flex;
       flex-direction: row-reverse;
+      figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
       img {
-        width: 100%;
-        padding-bottom: 0rem;
+        width: auto;
       }
       .fifth-third-content {
         margin-top: 5rem;
         margin-right: 2rem;
+        align-items: flex-start;
         p {
           width: 60%;
+          text-align: left;
         }
       }
     }
