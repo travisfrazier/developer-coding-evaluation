@@ -558,6 +558,13 @@ footer {
   footer {
     flex-direction: row;
     justify-content: space-around;
-  }
-  
+  }  
 }
+
+// Client Message Media Query 
+@media screen and (min-width: 455px) {
+  .client-message {
+    top: 61rem;
+  }
+}
+
