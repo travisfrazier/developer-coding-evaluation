@@ -367,7 +367,8 @@ footer {
       background-color: #fff; }
 
   .gojo {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-top: 2rem; }
     .gojo .gojo-container {
       max-width: 1024px;
       margin: 0 auto;
@@ -376,12 +377,11 @@ footer {
       background: none;
       margin-top: 5rem;
       margin-left: 8rem; }
-      .gojo .gojo-content p {
-        width: 60%; }
     .gojo figure {
-      margin-bottom: -2.4rem; }
+      margin-bottom: -2.4rem;
+      margin-right: 5rem; }
       .gojo figure img {
-        width: 100%;
+        width: auto;
         padding-bottom: 0rem; }
 
   .fifth-third {
