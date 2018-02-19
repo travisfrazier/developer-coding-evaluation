@@ -397,12 +397,13 @@ footer {
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        position: relative; }
+        position: relative;
+        margin-bottom: -9rem; }
       .fifth-third .fifth-third-container img {
         width: auto; }
       .fifth-third .fifth-third-container .fifth-third-content {
         margin-top: 5rem;
-        margin-right: 2rem;
+        margin-left: 3rem;
         align-items: flex-start; }
         .fifth-third .fifth-third-container .fifth-third-content p {
           width: 60%;
