@@ -142,7 +142,7 @@ header {
       padding: 1.25rem 2.25rem;
       border-radius: 5px;
       font-weight: 700;
-      width: 12rem; }
+      width: 10.25rem; }
 
 .fifth-third {
   display: flex;
@@ -181,7 +181,7 @@ header {
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
     font-weight: 700;
-    width: 12rem; }
+    width: 10.25rem; }
 
 .christ-hospital {
   background: url("../images/pic-chhn-bg.png") no-repeat;
@@ -214,7 +214,7 @@ header {
     padding: 1.25rem 2.25rem;
     border-radius: 5px;
     font-weight: 700;
-    width: 12rem; }
+    width: 10.25rem; }
 
 .contact {
   display: flex;
@@ -254,7 +254,7 @@ header {
       padding: 1.25rem 2.25rem;
       border-radius: 5px;
       font-weight: 700;
-      width: 12rem;
+      width: 10.25rem;
       margin-bottom: 3rem; }
     .contact form .form-content {
       padding: 1rem; }
@@ -306,12 +306,12 @@ footer {
   header {
     background-image: url("../images/cardinal-blue-bg.png");
     background-size: cover;
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
     align-items: initial; }
     header figure {
       display: block;
       margin-top: 2rem;
-      margin-bottom: 6rem;
+      margin-bottom: 8rem;
       width: 1024px; }
     header p {
       font-size: 3rem;
@@ -436,7 +436,7 @@ footer {
         margin-left: 1rem; }
     .contact .contact-two {
       text-align: left;
-      border-left: 2px solid gray;
+      border-left: 1px solid gray;
       padding-left: 2rem; }
       .contact .contact-two p {
         text-align: left;
