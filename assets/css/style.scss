@@ -67,6 +67,9 @@ html {
 body {
   line-height: 1.5rem;
 }
+h4 {
+  font-weight: $font-medium;
+}
 
 // Header Section Styles 
 header {
@@ -105,7 +108,7 @@ header {
   @include flex-column;
   max-width: 85%;
   margin: 0 auto;
-  .service-container {
+  .service-elements-container {
     @include flex-column;
   }
   img {
@@ -159,7 +162,7 @@ header {
 }
 
 // Gojo Section 
-.gojo {
+.clientOne {
   background: url("../images/pic-gojo-bg.png");
   background-size: cover;
   background-position: center;
@@ -170,7 +173,7 @@ header {
       width: 90%;
     }
   }
-  .gojo-content {
+  .clientOne-content {
     background-color: $background-primary;
     padding-top: 2rem;
     padding-left: 2rem;
@@ -182,12 +185,12 @@ header {
       margin-bottom: 0.5rem;
     }
     h4 {
-      font-weight: $font-bold;
       margin-bottom: 1.5rem;
     }
     p {
       margin-bottom: 1.5rem;
       width: 90%;
+      font-weight: $font-light;
     }
     button {
       background-color: $background-secondary;
@@ -198,7 +201,7 @@ header {
 }
 
 // Fifth Third App Section 
-.fifth-third {
+.clientTwo {
   @include flex-column;
   background: url("../images/pic-fifththird-bg.png");
   background-position: center;
@@ -207,7 +210,7 @@ header {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: $color-font-primary;
-  .fifth-third-content {
+  .clientTwo-content {
     @include flex-column;
     margin: 0 auto;
   }
@@ -237,7 +240,7 @@ header {
 }
 
 // Christ Hospital Section 
-.christ-hospital {
+.clientThree {
   background: url("../images/pic-chhn-bg.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -334,7 +337,7 @@ header {
       }
     }
   }
-  .contact-two {
+  .contact-lower {
     text-align: center;
     h5 {
       font-weight: $font-bold;
@@ -398,7 +401,7 @@ footer {
     display: flex;
     justify-content: center;
     @include wrapper;
-    .service-one {
+    div:first-child {
       margin-left: 3rem;
     }
     .service {
@@ -409,7 +412,7 @@ footer {
         right: 9rem;
       }
     }
-    .service-container {
+    .service-elements-container {
       justify-content: center;
       align-items: flex-start;
       width: 70%;
@@ -449,14 +452,14 @@ footer {
   }
 
   // Gojo Section 
-  .gojo {
+  .clientOne {
     padding-bottom: 2rem;
     padding-top: 2rem;
-    .gojo-container {
+    .clientOne-container {
       @include wrapper;
       display: flex;
     }
-    .gojo-content {
+    .clientOne-content {
       background: none;
       margin-top: auto;
       margin-bottom: auto;
@@ -473,10 +476,10 @@ footer {
   }
 
   // Fifth Third Section 
-  .fifth-third {
+  .clientTwo {
     overflow: hidden;
     padding-bottom: 0rem;
-    .fifth-third-container {
+    .clientTwo-container {
       @include wrapper;
       display: flex;
       flex-direction: row-reverse;
@@ -491,7 +494,7 @@ footer {
       img {
         width: auto;
       }
-      .fifth-third-content {
+      .clientTwo-content {
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 3rem;
@@ -505,7 +508,7 @@ footer {
   }
 
   // Christ Hospital Section 
-  .christ-hospital {
+  .clientThree {
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
@@ -513,7 +516,7 @@ footer {
       margin-right: 3rem;
       margin-bottom: -6rem;
     }
-    .christ-hospital-content {
+    .clientThree-content {
       margin-top: auto;
       margin-bottom: auto;
       margin-left: 3rem;
@@ -527,14 +530,14 @@ footer {
   .contact {
     flex-direction: row;
     justify-content: center;
-    .contact-one {
+    .contact-upper {
       padding-right: 2rem;
       button {
         margin-right: auto;
         margin-left: 1rem;
       }
     }
-    .contact-two {
+    .contact-lower {
       text-align: left;
       border-left: 1px solid $border-color;
       padding-left: 2rem;
@@ -562,6 +565,16 @@ footer {
 @media screen and (min-width: 455px) {
   .client-message {
     top: 61rem;
+  }
+}
+
+// Tablet and Small Desktop Media Query 
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  .service p {
+    width: 60%;
+  }
+  .client-message {
+    top: 63rem;
   }
 }
 

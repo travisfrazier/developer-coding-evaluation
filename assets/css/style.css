@@ -25,6 +25,9 @@ html {
 body {
   line-height: 1.5rem; }
 
+h4 {
+  font-weight: 500; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -60,7 +63,7 @@ header {
   align-items: center;
   max-width: 85%;
   margin: 0 auto; }
-  .service .service-container {
+  .service .service-elements-container {
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -110,32 +113,32 @@ header {
     width: 80%;
     font-weight: 200; }
 
-.gojo {
+.clientOne {
   background: url("../images/pic-gojo-bg.png");
   background-size: cover;
   background-position: center; }
-  .gojo figure {
+  .clientOne figure {
     padding-top: 3rem;
     margin-bottom: -0.4rem; }
-    .gojo figure img {
+    .clientOne figure img {
       width: 90%; }
-  .gojo .gojo-content {
+  .clientOne .clientOne-content {
     background-color: #ecebeb;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-bottom: 3rem; }
-    .gojo .gojo-content h3 {
+    .clientOne .clientOne-content h3 {
       font-size: 1.5rem;
       width: 90%;
       font-weight: 700;
       margin-bottom: 0.5rem; }
-    .gojo .gojo-content h4 {
-      font-weight: 700;
+    .clientOne .clientOne-content h4 {
       margin-bottom: 1.5rem; }
-    .gojo .gojo-content p {
+    .clientOne .clientOne-content p {
       margin-bottom: 1.5rem;
-      width: 90%; }
-    .gojo .gojo-content button {
+      width: 90%;
+      font-weight: 200; }
+    .clientOne .clientOne-content button {
       background-color: #2174c2;
       color: #fff;
       font-size: 1rem;
@@ -144,7 +147,7 @@ header {
       font-weight: 700;
       width: 10.25rem; }
 
-.fifth-third {
+.clientTwo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,26 +158,26 @@ header {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #fff; }
-  .fifth-third .fifth-third-content {
+  .clientTwo .clientTwo-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto; }
-  .fifth-third h3 {
+  .clientTwo h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem; }
-  .fifth-third p {
+  .clientTwo p {
     width: 70%;
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: 200; }
-  .fifth-third img {
+  .clientTwo img {
     width: 100%;
     margin-bottom: 2rem; }
-  .fifth-third h4 {
+  .clientTwo h4 {
     margin-bottom: 2rem; }
-  .fifth-third button {
+  .clientTwo button {
     background-color: #fff;
     color: #000;
     font-size: 1rem;
@@ -183,7 +186,7 @@ header {
     font-weight: 700;
     width: 10.25rem; }
 
-.christ-hospital {
+.clientThree {
   background: url("../images/pic-chhn-bg.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -194,20 +197,20 @@ header {
   text-align: left;
   color: #fff;
   padding-left: 2rem; }
-  .christ-hospital h3 {
+  .clientThree h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem; }
-  .christ-hospital h4 {
+  .clientThree h4 {
     margin-bottom: 2rem; }
-  .christ-hospital img {
+  .clientThree img {
     width: 100%;
     margin-bottom: 2rem; }
-  .christ-hospital p {
+  .clientThree p {
     font-weight: 200;
     width: 90%;
     margin-bottom: 1.5rem; }
-  .christ-hospital button {
+  .clientThree button {
     background-color: #fff;
     color: #000;
     font-size: 1rem;
@@ -274,13 +277,13 @@ header {
         margin-bottom: 1.5rem;
         resize: none;
         padding-top: 0.75rem; }
-  .contact .contact-two {
+  .contact .contact-lower {
     text-align: center; }
-    .contact .contact-two h5 {
+    .contact .contact-lower h5 {
       font-weight: 700;
       font-size: 1.10rem;
       margin-bottom: 1rem; }
-    .contact .contact-two .number {
+    .contact .contact-lower .number {
       font-weight: 700;
       margin-bottom: 2.25rem; }
 
@@ -327,18 +330,18 @@ footer {
     justify-content: center;
     max-width: 1024px;
     margin: 0 auto; }
-    .services-container .service-one {
+    .services-container div:first-child {
       margin-left: 3rem; }
     .services-container .service img {
       display: inline;
       position: relative;
       top: 3rem;
       right: 9rem; }
-    .services-container .service-container {
+    .services-container .service-elements-container {
       justify-content: center;
       align-items: flex-start;
       width: 70%; }
-      .services-container .service-container p {
+      .services-container .service-elements-container p {
         text-align: left; }
 
   .clients {
@@ -366,81 +369,81 @@ footer {
       margin: 0.5rem;
       background-color: #fff; }
 
-  .gojo {
+  .clientOne {
     padding-bottom: 2rem;
     padding-top: 2rem; }
-    .gojo .gojo-container {
+    .clientOne .clientOne-container {
       max-width: 1024px;
       margin: 0 auto;
       display: flex; }
-    .gojo .gojo-content {
+    .clientOne .clientOne-content {
       background: none;
       margin-top: auto;
       margin-bottom: auto;
       margin-left: 8rem; }
-    .gojo figure {
+    .clientOne figure {
       margin-bottom: -2.4rem;
       margin-right: 5rem; }
-      .gojo figure img {
+      .clientOne figure img {
         width: auto;
         padding-bottom: 0rem; }
 
-  .fifth-third {
+  .clientTwo {
     overflow: hidden;
     padding-bottom: 0rem; }
-    .fifth-third .fifth-third-container {
+    .clientTwo .clientTwo-container {
       max-width: 1024px;
       margin: 0 auto;
       display: flex;
       flex-direction: row-reverse; }
-      .fifth-third .fifth-third-container figure {
+      .clientTwo .clientTwo-container figure {
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         position: relative;
         margin-bottom: -9rem; }
-      .fifth-third .fifth-third-container img {
+      .clientTwo .clientTwo-container img {
         width: auto; }
-      .fifth-third .fifth-third-container .fifth-third-content {
+      .clientTwo .clientTwo-container .clientTwo-content {
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 3rem;
         align-items: flex-start; }
-        .fifth-third .fifth-third-container .fifth-third-content p {
+        .clientTwo .clientTwo-container .clientTwo-content p {
           width: 60%;
           text-align: left; }
 
-  .christ-hospital {
+  .clientThree {
     flex-direction: row;
     justify-content: center;
     overflow: hidden; }
-    .christ-hospital figure {
+    .clientThree figure {
       margin-right: 3rem;
       margin-bottom: -6rem; }
-    .christ-hospital .christ-hospital-content {
+    .clientThree .clientThree-content {
       margin-top: auto;
       margin-bottom: auto;
       margin-left: 3rem; }
-      .christ-hospital .christ-hospital-content h3 {
+      .clientThree .clientThree-content h3 {
         width: 70%; }
 
   .contact {
     flex-direction: row;
     justify-content: center; }
-    .contact .contact-one {
+    .contact .contact-upper {
       padding-right: 2rem; }
-      .contact .contact-one button {
+      .contact .contact-upper button {
         margin-right: auto;
         margin-left: 1rem; }
-    .contact .contact-two {
+    .contact .contact-lower {
       text-align: left;
       border-left: 1px solid gray;
       padding-left: 2rem; }
-      .contact .contact-two p {
+      .contact .contact-lower p {
         text-align: left;
         margin: 0; }
-      .contact .contact-two #google-map {
+      .contact .contact-lower #google-map {
         margin: 2rem 0rem 0.75rem 0rem; }
 
   #border {
@@ -452,5 +455,11 @@ footer {
 @media screen and (min-width: 455px) {
   .client-message {
     top: 61rem; } }
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  .service p {
+    width: 60%; }
+
+  .client-message {
+    top: 63rem; } }
 
 /*# sourceMappingURL=style.css.map */
