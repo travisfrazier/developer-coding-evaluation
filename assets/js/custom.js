@@ -14,23 +14,30 @@ function initMap() {
 // Contact Form Validation ----- //
 // User name validation 
 function formValidate() {
-  var input = document.forms["contactForm"]["name"].value;
-  if (input == "") {
+  let input = document.forms["contactForm"]["name"].value;
+  switch (input) {
+    case "":
       alert("Please enter your name");
       return false;
+      break;
   }
+
   //Email Validation
-  var email = document.forms["contactForm"]["email"].value;
-  if (email == "") {
+  let email = document.forms["contactForm"]["email"].value;
+  switch (email) {
+    case "":
       alert("Please enter your email address");
       return false;
+      break;
   }
 
   //Message Validation 
-  var message = document.forms["contactForm"]["message"].value;
-  if (message == "") {
+  let message = document.forms["contactForm"]["message"].value;
+  switch (message) {
+    case "":
       alert("Please enter your message");
       return false;
+      break;
   }
 }
 
