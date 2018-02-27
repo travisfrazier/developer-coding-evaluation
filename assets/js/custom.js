@@ -14,30 +14,26 @@ function initMap() {
 // Contact Form Validation ----- //
 // User name validation 
 function formValidate() {
-  let input = document.forms["contactForm"]["name"].value;
-  switch (input) {
-    case "":
-      alert("Please enter your name");
-      return false;
-      break;
+  const input = document.forms["contactForm"]["name"].value.trim();
+  const email = document.forms["contactForm"]["email"].value.trim();
+  const message = document.forms["contactForm"]["message"].value.trim();
+  
+  // Name Validation
+  if (!input) {
+    alert("Please enter your name");
+    return false;
   }
-
   //Email Validation
-  let email = document.forms["contactForm"]["email"].value;
-  switch (email) {
-    case "":
-      alert("Please enter your email address");
-      return false;
-      break;
+  if (!email) {
+    alert("Please enter your email address");
+    return false;
   }
-
   //Message Validation 
-  let message = document.forms["contactForm"]["message"].value;
-  switch (message) {
-    case "":
-      alert("Please enter your message");
-      return false;
-      break;
+  if (!message) {
+    alert("Please enter your message");
+    return false;
   }
 }
+
+// Code to submit data to server goes here
 
